@@ -52,7 +52,7 @@ var levels = [
   {
     helpTitle: "Selecione o elemento que está dentro de outro elemento",
     selectorName : "Descendentes",
-    doThis : "Select the apple on the plate",
+    doThis : "Selecione a Maçã que está no prato",
     selector : "prato maçã",
     syntax: "A&nbsp;&nbsp;B",
     help : "Selects all <strong>B</strong> inside of <strong>A</strong>. <strong>B</strong> is called a descendant because it is inside of another element.",
@@ -81,7 +81,7 @@ var levels = [
     <toalha>
     <laranja/>
     </toalha>
-    <prato id="fancy">
+    <prato id="chique">
       <picles/>
     </prato>
     <prato>
@@ -101,9 +101,9 @@ var levels = [
     ],
     boardMarkup : `
     <maçã/>
-    <maçã class="small"/>
+    <maçã class="pequeno"/>
     <prato>
-      <maçã class="small"/>
+      <maçã class="pequeno"/>
     </prato>
     <prato/>
     `
@@ -120,15 +120,15 @@ var levels = [
     ],
     boardMarkup :`
     <maçã/>
-    <maçã class="small"/>
+    <maçã class="pequeno"/>
     <toalha>
-      <laranja class="small"/>
+      <laranja class="pequeno"/>
     </toalha>
     <prato>
       <laranja/>
     </prato>
     <prato>
-      <laranja class="small"/>
+      <laranja class="pequeno"/>
     </prato>`
   },
   {
@@ -141,15 +141,15 @@ var levels = [
     <toalha>
       <laranja/>
     </toalha>
-    <laranja class="small"/>
+    <laranja class="pequeno"/>
     <toalha>
-      <laranja class="small"/>
+      <laranja class="pequeno"/>
     </toalha>
     <toalha>
-      <maçã class="small"/>
+      <maçã class="pequeno"/>
     </toalha>
     <toalha>
-      <laranja class="small"/>
+      <laranja class="pequeno"/>
     </toalha>
     `
   },
@@ -165,7 +165,7 @@ var levels = [
     '<strong>a, p, div</strong> selects all <tag>a</tag>, <tag>p</tag> and <tag>div</tag> elements'
     ],
     boardMarkup : `
-    <picles class="small"/>
+    <picles class="pequeno"/>
     <picles/>
     <prato>
       <picles/>
@@ -177,7 +177,7 @@ var levels = [
       <picles/>
     </prato>
     <picles/>
-    <picles class="small"/>
+    <picles class="pequeno"/>
     `
   },
   {
@@ -193,13 +193,13 @@ var levels = [
     boardMarkup : `
     <maçã/>
     <prato>
-      <laranja class="small" />
+      <laranja class="pequeno" />
     </prato>
     <toalha/>
     <toalha>
       <laranja/>
     </toalha>
-    <prato id="fancy"/>
+    <prato id="chique"/>
     `
   },
   {
@@ -213,13 +213,13 @@ var levels = [
       '<strong>ul.fancy *</strong> selects every element inside all <tag>ul class="fancy"</tag> elements.'
     ],
     boardMarkup: `
-    <prato id="fancy">
-      <laranja class="small"/>
+    <prato id="chique">
+      <laranja class="pequeno"/>
     </prato>
     <prato>
       <picles/>
     </prato>
-    <maçã class="small"/>
+    <maçã class="pequeno"/>
     <prato>
       <maçã/>
     </prato>`
@@ -237,14 +237,14 @@ var levels = [
     ],
     boardMarkup : `
     <toalha>
-      <maçã class="small"/>
+      <maçã class="pequeno"/>
     </toalha>
     <prato />
-    <maçã class="small"/>
+    <maçã class="pequeno"/>
     <prato />
     <maçã/>
-    <maçã class="small"/>
-    <maçã class="small"/>
+    <maçã class="pequeno"/>
+    <maçã class="pequeno"/>
     `
   },
   {
@@ -260,15 +260,15 @@ var levels = [
     boardMarkup : `
     <picles/>
     <toalha>
-      <laranja class="small"/>
+      <laranja class="pequeno"/>
     </toalha>
-    <picles class="small"/>
+    <picles class="pequeno"/>
     <picles/>
     <prato>
       <picles/>
     </prato>
     <prato>
-      <picles class="small"/>
+      <picles class="pequeno"/>
     </prato>
     `
   },
@@ -293,7 +293,7 @@ var levels = [
     </prato>
     <prato/>
     <maçã/>
-    <maçã class="small"/>
+    <maçã class="pequeno"/>
     `
   },
   {
@@ -317,7 +317,7 @@ var levels = [
       <laranja />
       <laranja />
     </prato>
-    <picles class="small" />
+    <picles class="pequeno" />
     `
   },
   {
@@ -342,10 +342,10 @@ var levels = [
       <picles />
     </toalha>
     <prato>
-      <laranja class="small"/>
+      <laranja class="pequeno"/>
       <laranja/>
     </prato>
-    <picles class="small"/>
+    <picles class="pequeno"/>
     `
   },
   {
@@ -361,15 +361,15 @@ var levels = [
       '<strong>ul li:last-child</strong> selects the last <tag>li</tag> elements inside of any <tag>ul</tag>.'
     ],
     boardMarkup : `
-    <prato id="fancy">
-      <maçã class="small"/>
+    <prato id="chique">
+      <maçã class="pequeno"/>
     </prato>
     <prato/>
     <prato>
-      <laranja class="small"/>
+      <laranja class="pequeno"/>
       <laranja>
     </prato>
-    <picles class="small"/>`
+    <picles class="pequeno"/>`
   },
   {
     selectorName: "Enésimo filho Pseudo-selector",
@@ -386,7 +386,7 @@ var levels = [
     <prato/>
     <prato/>
     <prato/>
-    <prato id="fancy"/>
+    <prato id="chique"/>
     `
   },
   {
@@ -421,13 +421,13 @@ var levels = [
       '<strong>span:first-of-type</strong> selects the first <tag>span</tag> in any element.'
     ],
     boardMarkup: `
-    <laranja class="small"/>
+    <laranja class="pequeno"/>
     <maçã/>
-    <maçã class="small"/>
+    <maçã class="pequeno"/>
     <maçã/>
-    <maçã class="small"/>
+    <maçã class="pequeno"/>
     <prato>
-      <laranja class="small"/>
+      <laranja class="pequeno"/>
       <laranja/>
     </prato>
     `
@@ -447,7 +447,7 @@ var levels = [
     <prato/>
     <prato/>
     <prato/>
-    <prato id="fancy"/>
+    <prato id="chique"/>
     <prato/>
     `
   },
@@ -463,10 +463,10 @@ var levels = [
     boardMarkup : `
     <prato/>
     <prato>
-      <picles class="small" />
+      <picles class="pequeno" />
     </prato>
     <prato>
-      <maçã class="small" />
+      <maçã class="pequeno" />
     </prato>
     <prato/>
     <prato>
@@ -486,12 +486,12 @@ var levels = [
       '<strong>p span:only-of-type</strong> selects a <tag>span</tag> within any <tag>p</tag> if it is the only <tag>span</tag> in there.'
     ],
     boardMarkup: `
-    <prato id="fancy">
-      <maçã class="small" />
+    <prato id="chique">
+      <maçã class="pequeno" />
       <maçã />
     </prato>
     <prato>
-      <maçã class="small" />
+      <maçã class="pequeno" />
     </prato>
     <prato>
       <picles />
@@ -510,12 +510,12 @@ var levels = [
       '<strong>p span:last-of-type</strong> selects the last <tag>span</tag> in every <tag>p</tag>.'
     ],
     boardMarkup : `
-    <laranja class="small"/>
-    <laranja class="small" />
+    <laranja class="pequeno"/>
+    <laranja class="pequeno" />
     <picles />
     <picles />
-    <maçã class="small" />
-    <maçã class="small" />
+    <maçã class="pequeno" />
+    <maçã class="pequeno" />
     `
   },
   {
@@ -531,7 +531,7 @@ var levels = [
     boardMarkup:`
     <toalha/>
     <toalha>
-      <picles class="small"/>
+      <picles class="pequeno"/>
     </toalha>
     <prato/>
     <toalha/>`
@@ -549,17 +549,17 @@ var levels = [
       '<strong>:not(.big, .medium)</strong> selects all elements that do not have <strong>class="big"</strong> or <strong>class="medium"</strong>.'
     ],
     boardMarkup: `
-    <prato id="fancy">
-      <maçã class="small" />
+    <prato id="chique">
+      <maçã class="pequeno" />
     </prato>
     <prato>
       <maçã />
     </prato>
     <maçã />
     <prato>
-      <laranja class="small" />
+      <laranja class="pequeno" />
     </prato>
-    <picles class="small" />
+    <picles class="pequeno" />
     `
   },
   {
@@ -574,7 +574,7 @@ var levels = [
       '<strong>[type]</strong> selects all elements that have a <strong>type="anything"</strong>. attribute'
     ],
     boardMarkup:`
-    <toalha><maçã class="small"/></toalha>
+    <toalha><maçã class="pequeno"/></toalha>
     <maçã for="Ethan"/>
     <prato for="Alice"><picles/></prato>
     <toalha for="Clara"><laranja/></toalha>
@@ -628,7 +628,7 @@ var levels = [
     ],
     boardMarkup: `
     <prato for="Sam"><picles/></prato>
-    <toalha for="Sarah"><maçã class="small"/></toalha>
+    <toalha for="Sarah"><maçã class="pequeno"/></toalha>
     <toalha for="Mary"><laranja/></toalha>
     `
   },
@@ -643,11 +643,11 @@ var levels = [
       '<strong>img[src$=".jpg"]</strong> selects all images display a <strong>.jpg</strong> image.',
     ],
     boardMarkup:`
-    <maçã class="small"/>
+    <maçã class="pequeno"/>
     <toalha for="Hayato"><picles/></toalha>
     <maçã for="Ryota"></maçã>
     <prato for="Minato"><laranja/></prato>
-    <picles class="small"/>
+    <picles class="pequeno"/>
     `
   },
   {
