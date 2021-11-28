@@ -419,8 +419,8 @@ laranja,maçã {
   margin: 20px 10px;
 }
 
-laranja.small,
-maçã.small {
+laranja.pequeno,
+maçã.pequeno {
   height: 30px;
   width: 30px;
   border-width: 2px 4px 8px 4px;
@@ -438,7 +438,7 @@ picles {
   margin: 20px 10px;
 }
 
-picles.small {
+picles.pequeno {
   height: 40px;
   width: 18px;
   border-width: 1px 2px 6px 2px;
@@ -477,15 +477,15 @@ toalha > laranja:last-child
   top: calc(50% - 35px);
 }
 
-prato .small,
-toalha .small {
+prato .pequeno,
+toalha .pequeno {
   left: calc(50% - 15px);
   margin-left:0;
   margin-right:0;
 }
 
-prato > .small:only-child,
-toalha > .small:only-child {
+prato > .pequeno:only-child,
+toalha > .pequeno:only-child {
   position: absolute;
   top: calc(50% - 15px);
   margin:0;
@@ -500,8 +500,8 @@ toalha > picles:only-child {
   position: absolute;
 }
 
-prato > picles.small:only-child,
-toalha > picles.small:only-child {
+prato > picles.pequeno:only-child,
+toalha > picles.pequeno:only-child {
   top: calc(50% - 22px);
   left: calc(50% - 8px);
   z-index: 99999;
@@ -633,7 +633,7 @@ prato:before {
   background: rgba(255,255,255,1);
 }
 
-#fancy:after {
+#chique:after {
   content: "";
   display: block;
   position: absolute;
