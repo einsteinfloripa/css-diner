@@ -85,7 +85,7 @@ header {
   color: rgba(255,255,255,.4);
 }
 
-.logo plate {
+.logo prato {
   z-index: 500;
   position: absolute;
   top: 0;
@@ -95,7 +95,7 @@ header {
   transition: all opacity .1s ease-out;
 }
 
-.logo:hover plate {
+.logo:hover prato {
   opacity: .75;
   transform-origin: bottom;
   animation: strobeStart .5s ease-out, strobe 1s infinite;
@@ -137,7 +137,7 @@ header {
   width: 100%;
 }
 
-.table plate {
+.table prato {
   z-index: 99999;
 }
 
@@ -167,7 +167,7 @@ header {
   right: 20px;
 }
 
-orange, apple, pickle, bento, plate {
+laranja, maçã, picles, toalha, prato {
   transition: transform ease-out .2s;
 }
 
@@ -203,7 +203,7 @@ orange, apple, pickle, bento, plate {
   100% { transform: translateY(-600px) rotate3d(0,0,0,0deg);}
 }
 
-bento, plate {
+toalha, prato {
   box-shadow: 0px 8px 0px rgba(0,0,0,.1);
   display: inline-block;
   width: 100px;
@@ -212,14 +212,14 @@ bento, plate {
   position: relative;
 }
 
-plate {
+prato {
   border-bottom: solid 5px #DDD;
   background: white;
   -webkit-border-radius: 100px;
   border-radius: 100px;
 }
 
-bento {
+toalha {
   height: 100px;
   background: brown;
   position: relative;
@@ -229,7 +229,7 @@ bento {
 
 
 
-plate bento {
+prato toalha {
   height: 74px;
   width: 74px;
   position: absolute;
@@ -238,12 +238,12 @@ plate bento {
 
 }
 
-plate bento apple,
-plate bento orange {
+prato toalha maçã,
+prato toalha laranja {
   top: -36px !important;
 }
 
-bento:before {
+toalha:before {
   content:"";
   position: absolute;
   width: calc(100%);
@@ -351,14 +351,11 @@ bento:before {
   background: rgba(62,203,255,.3);
   -webkit-animation: input .5s infinite;
   -moz-animation: input .5s infinite;
+  animation: input .5s infinite;
 
 }
 
-@-webkit-keyframes input {
-  50% { background:none ; }
-}
-
-@-moz-keyframes input {
+@keyframes input {
   50% { background:none ; }
 }
 
@@ -375,17 +372,17 @@ bento:before {
   font-size: 30px;
 }
 
-apple {
+maçã {
   background: #e41919;
   border-color: #ab1212;
 }
 
-orange {
+laranja {
   background: orange;
   border-color: #bd6e07;
 }
 
-orange,apple,pickle {
+laranja,maçã,picles {
   box-shadow: 0px 5px 0px rgba(0,0,0,.2);
   display: inline-block;
   margin: 0 10px;
@@ -411,7 +408,7 @@ carrot {
 }
 
 
-orange,apple {
+laranja,maçã {
   -webkit-border-radius: 100px;
   border-radius: 100px;
   border-style: solid;
@@ -422,15 +419,15 @@ orange,apple {
   margin: 20px 10px;
 }
 
-orange.small,
-apple.small {
+laranja.small,
+maçã.small {
   height: 30px;
   width: 30px;
   border-width: 2px 4px 8px 4px;
   margin: 30px 10px;
 }
 
-pickle {
+picles {
   background: #179837;
   width: 25px;
   border-radius: 30px;
@@ -441,14 +438,14 @@ pickle {
   margin: 20px 10px;
 }
 
-pickle.small {
+picles.small {
   height: 40px;
   width: 18px;
   border-width: 1px 2px 6px 2px;
   margin: 30px 10px;
 }
 
-orange:before,apple:before {
+laranja:before,maçã:before {
   content: "";
   display: block;
   position: absolute;
@@ -462,40 +459,40 @@ orange:before,apple:before {
 
 /*FRUITS ON A PLATTER*/
 
-bento orange,
-bento apple,
-plate orange,
-plate apple
+toalha laranja,
+toalha maçã,
+prato laranja,
+prato maçã
  {
   left: calc(50% - 30px);
   margin: 0;
   position: absolute;
 }
 
-plate > apple:last-child,
-plate > orange:last-child,
-bento > apple:last-child,
-bento > orange:last-child
+prato > maçã:last-child,
+prato > laranja:last-child,
+toalha > maçã:last-child,
+toalha > laranja:last-child
 {
   top: calc(50% - 35px);
 }
 
-plate .small,
-bento .small {
+prato .small,
+toalha .small {
   left: calc(50% - 15px);
   margin-left:0;
   margin-right:0;
 }
 
-plate > .small:only-child,
-bento > .small:only-child {
+prato > .small:only-child,
+toalha > .small:only-child {
   position: absolute;
   top: calc(50% - 15px);
   margin:0;
 }
 
-plate > pickle:only-child,
-bento > pickle:only-child {
+prato > picles:only-child,
+toalha > picles:only-child {
   top: calc(50% - 40px);
   left: calc(50% - 10px);
   z-index: 99999;
@@ -503,8 +500,8 @@ bento > pickle:only-child {
   position: absolute;
 }
 
-plate > pickle.small:only-child,
-bento > pickle.small:only-child {
+prato > picles.small:only-child,
+toalha > picles.small:only-child {
   top: calc(50% - 22px);
   left: calc(50% - 8px);
   z-index: 99999;
@@ -596,12 +593,12 @@ bento > pickle.small:only-child {
   box-shadow: 0 0 0 6px rgba(255,255,255,.4);
 }
 
-plate [data-hovered] {
+prato [data-hovered] {
   box-shadow: 0 0 0 6px rgba(0,0,0,.3);
 }
 
 /*
-apple[data-hovered="true"] {
+maçã[data-hovered="true"] {
   box-shadow: 0 0 0 6px rgba(228,25,25,.3);
 }
 */
@@ -622,7 +619,7 @@ apple[data-hovered="true"] {
   white-space: nowrap;
 }
 
-plate:before {
+prato:before {
   content: "";
   display: block;
   position: absolute;
@@ -649,7 +646,7 @@ plate:before {
   opacity: .4;
 }
 
-orange {
+laranja {
   z-index: 1000;
 }
 
@@ -761,31 +758,31 @@ board {
 
 /* Fancy orange stacking */
 
-plate apple,
-plate orange {
+prato maçã,
+prato laranja {
   position: absolute;
 }
 
-plate apple:last-child,
-plate orange:last-child {
+prato maçã:last-child,
+prato laranja:last-child {
   z-index: 300;
 }
 
-plate apple:nth-last-child(2),
-plate orange:nth-last-child(2) {
+prato maçã:nth-last-child(2),
+prato laranja:nth-last-child(2) {
   top: -25px;
   z-index: 400;
 }
 
-plate apple:nth-last-child(3),
-plate orange:nth-last-child(3)
+prato maçã:nth-last-child(3),
+prato laranja:nth-last-child(3)
 {
   top: -65px;
   z-index: 500;
 }
 
-plate apple:nth-last-child(4),
-plate orange:nth-last-child(4)
+prato maçã:nth-last-child(4),
+prato laranja:nth-last-child(4)
 {
   top: -105px;
   z-index: 600;
@@ -871,6 +868,7 @@ plate orange:nth-last-child(4)
   border: solid 2px #2a231d;
   background: rgba(255,255,255,.5);
   -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 
 .order {
@@ -1137,6 +1135,7 @@ plate orange:nth-last-child(4)
   color: rgba(255,255,255,.3);
   padding: 8px 15px 10px 15px;
   -webkit-border-radius: 20px;
+  border-radius: 20px;
   text-decoration: none;
   display: inline-block;
 }
@@ -1192,7 +1191,7 @@ plate orange:nth-last-child(4)
   width: 30px;
   display: inline-block;
   opacity: .25;
-  transition: opacity .2s .ease-out;
+  transition: opacity .2s ease-out;
 }
 
 .level-nav a:hover {
