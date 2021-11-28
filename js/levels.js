@@ -100,8 +100,8 @@ var levels = [
     '<strong>.neato</strong> selects all elements with <strong>class="neato"</strong>'
     ],
     boardMarkup : `
-    <maçã/>
-    <maçã class="pequeno"/>
+    <maçã />
+    <maçã class="pequeno" />
     <prato>
       <maçã class="pequeno"/>
     </prato>

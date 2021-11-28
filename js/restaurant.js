@@ -31,6 +31,9 @@ $(document).ready(function(){
 
   $(".share-menu").on("click","a",function(){
 
+    //Alert share configuration
+    alert("Ao compartilhar você estará enviando um link da versão original (Não traduzida) do game")
+
     var type = $(this).attr("type");
 
     if(type == "twitter"){
