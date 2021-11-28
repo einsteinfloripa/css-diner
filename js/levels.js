@@ -52,8 +52,8 @@ var levels = [
   {
     helpTitle: "Selecione o elemento que está dentro de outro elemento",
     selectorName : "Descendentes",
-    doThis : "Selecione a Maçã que está no prato",
-    selector : "prato maçã",
+    doThis : "Selecione a Tomate que está no prato",
+    selector : "prato tomate",
     syntax: "A&nbsp;&nbsp;B",
     help : "",
     examples : [
@@ -63,9 +63,9 @@ var levels = [
     boardMarkup : `
     <toalha/>
     <prato>
-      <maçã/>
+      <tomate/>
     </prato>
-    <maçã/>
+    <tomate/>
     `
   },
   {
@@ -90,7 +90,7 @@ var levels = [
     `
   },
   {
-    doThis : "Selecione as Maçãs pequenas",
+    doThis : "Selecione os Tomates pequenos",
     selector : ".pequeno",
     selectorName: "Seletor por classe",
     helpTitle: "Select elements by their class",
@@ -100,10 +100,10 @@ var levels = [
     '<strong>.neato</strong> selects all elements with <strong>class="neato"</strong>'
     ],
     boardMarkup : `
-    <maçã />
-    <maçã class="pequeno" />
+    <tomate />
+    <tomate class="pequeno" />
     <prato>
-      <maçã class="pequeno"/>
+      <tomate class="pequeno"/>
     </prato>
     <prato/>
     `
@@ -119,8 +119,8 @@ var levels = [
       '<strong>#big.wide</strong> selects all elements with <strong>id="big"</strong> that also have <strong>class="wide"</strong>'
     ],
     boardMarkup :`
-    <maçã/>
-    <maçã class="pequeno"/>
+    <tomate/>
+    <tomate class="pequeno"/>
     <toalha>
       <laranja class="pequeno"/>
     </toalha>
@@ -146,7 +146,7 @@ var levels = [
       <laranja class="pequeno"/>
     </toalha>
     <toalha>
-      <maçã class="pequeno"/>
+      <tomate class="pequeno"/>
     </toalha>
     <toalha>
       <laranja class="pequeno"/>
@@ -191,7 +191,7 @@ var levels = [
       '<strong>p *</strong> selects any element inside all <tag>p</tag> elements.',
     ],
     boardMarkup : `
-    <maçã/>
+    <tomate/>
     <prato>
       <laranja class="pequeno" />
     </prato>
@@ -219,14 +219,14 @@ var levels = [
     <prato>
       <picles/>
     </prato>
-    <maçã class="pequeno"/>
+    <tomate class="pequeno"/>
     <prato>
-      <maçã/>
+      <tomate/>
     </prato>`
   },
   {
-    doThis : "Selecione toda maçã que está ao lado de um prato",
-    selector : "prato + maçã",
+    doThis : "Selecione todo Tomate que está ao lado de um prato",
+    selector : "prato + tomate",
     helpTitle: "Select an element that directly follows another element",
     selectorName: "Irmãos Adjacentes",
     syntax : "A + B",
@@ -237,14 +237,14 @@ var levels = [
     ],
     boardMarkup : `
     <toalha>
-      <maçã class="pequeno"/>
+      <tomate class="pequeno"/>
     </toalha>
     <prato />
-    <maçã class="pequeno"/>
+    <tomate class="pequeno"/>
     <prato />
-    <maçã/>
-    <maçã class="pequeno"/>
-    <maçã class="pequeno"/>
+    <tomate/>
+    <tomate class="pequeno"/>
+    <tomate class="pequeno"/>
     `
   },
   {
@@ -275,8 +275,8 @@ var levels = [
   {
     selectorName: "Filhos",
     syntax: "A > B&nbsp;",
-    doThis : "Selecione a Maçã que está diretamente em cima de um prato",
-    selector : "prato > maçã",
+    doThis : "Selecione o Tomate que está diretamente em cima de um prato",
+    selector : "prato > tomate",
     helpTitle: "Select direct children of an element",
     help : "",
     examples : [
@@ -285,15 +285,15 @@ var levels = [
     boardMarkup: `
     <prato>
       <toalha>
-        <maçã/>
+        <tomate/>
       </toalha>
     </prato>
     <prato>
-      <maçã/>
+      <tomate/>
     </prato>
     <prato/>
-    <maçã/>
-    <maçã class="pequeno"/>
+    <tomate/>
+    <tomate class="pequeno"/>
     `
   },
   {
@@ -322,7 +322,7 @@ var levels = [
   {
     selectorName: "Apenas filhos de Pseudo-selector",
     helpTitle: "Select an element that are the only element inside of another one.",
-    doThis : "Selecione a Maçã e o Picles que estão em um prato",
+    doThis : "Selecione o Tomate e o Picles que estão em um prato",
     selector : "prato :only-child",
     syntax: ":only-child",
     help : "",
@@ -332,7 +332,7 @@ var levels = [
     ],
     boardMarkup : `
     <prato>
-      <maçã/>
+      <tomate/>
     </prato>
     <prato>
       <picles />
@@ -350,7 +350,7 @@ var levels = [
   {
     selectorName: "Último filho Pseudo-selector",
     helpTitle: "Select the last element inside of another element",
-    doThis : "Selecione a Maçã e o Picles pequenos",
+    doThis : "Selecione o Tomate e o Picles pequenos",
     selector : ".pequeno:last-child",
     syntax: ":last-child",
     help : "",
@@ -361,7 +361,7 @@ var levels = [
     ],
     boardMarkup : `
     <prato id="chique">
-      <maçã class="pequeno"/>
+      <tomate class="pequeno"/>
     </prato>
     <prato/>
     <prato>
@@ -412,8 +412,8 @@ var levels = [
   {
     selectorName: "Primeiro do tipo",
     helpTitle: "Select the first element of a specific type",
-    doThis : "Selecione a primeira Maçã",
-    selector : "maçã:first-of-type",
+    doThis : "Selecione o primeiro Tomate",
+    selector : "tomate:first-of-type",
     syntax: ":first-of-type",
     help : "",
     examples : [
@@ -421,10 +421,10 @@ var levels = [
     ],
     boardMarkup: `
     <laranja class="pequeno"/>
-    <maçã/>
-    <maçã class="pequeno"/>
-    <maçã/>
-    <maçã class="pequeno"/>
+    <tomate/>
+    <tomate class="pequeno"/>
+    <tomate/>
+    <tomate class="pequeno"/>
     <prato>
       <laranja class="pequeno"/>
       <laranja/>
@@ -465,11 +465,11 @@ var levels = [
       <picles class="pequeno" />
     </prato>
     <prato>
-      <maçã class="pequeno" />
+      <tomate class="pequeno" />
     </prato>
     <prato/>
     <prato>
-      <maçã />
+      <tomate />
     </prato>
     <prato/>
     `
@@ -477,20 +477,20 @@ var levels = [
   {
     selectorName: "Apenas do tipo",
     helpTitle: "Select elements that are the only ones of their type within their parent element",
-    selector : "maçã:only-of-type",
+    selector : "tomate:only-of-type",
     syntax: ":only-of-type",
-    doThis : "Selecione a Maçã no prato do meio",
+    doThis : "Selecione o Tomate no prato do meio",
     help : "",
     examples : [
       '<strong>p span:only-of-type</strong> selects a <tag>span</tag> within any <tag>p</tag> if it is the only <tag>span</tag> in there.'
     ],
     boardMarkup: `
     <prato id="chique">
-      <maçã class="pequeno" />
-      <maçã />
+      <tomate class="pequeno" />
+      <tomate />
     </prato>
     <prato>
-      <maçã class="pequeno" />
+      <tomate class="pequeno" />
     </prato>
     <prato>
       <picles />
@@ -500,7 +500,7 @@ var levels = [
   {
     selectorName: "Último do tipo",
     helpTitle: "Select the last element of a specific type",
-    doThis : "Selecione a última maçã e laranja",
+    doThis : "Selecione o último Tomate e laranja",
     selector : ".pequeno:last-of-type",
     syntax: ":last-of-type",
     help : "",
@@ -513,8 +513,8 @@ var levels = [
     <laranja class="pequeno" />
     <picles />
     <picles />
-    <maçã class="pequeno" />
-    <maçã class="pequeno" />
+    <tomate class="pequeno" />
+    <tomate class="pequeno" />
     `
   },
   {
@@ -538,8 +538,8 @@ var levels = [
   {
     selectorName: "Negação",
     helpTitle: "Select all elements that don't match the negation selector",
-    doThis : "Selecione as Maçãs grandes",
-    selector : "maçã:not(.pequeno)",
+    doThis : "Selecione os Tomates grandes",
+    selector : "tomate:not(.pequeno)",
     syntax: ":not(X)",
     help : '',
     examples : [
@@ -549,12 +549,12 @@ var levels = [
     ],
     boardMarkup: `
     <prato id="chique">
-      <maçã class="pequeno" />
+      <tomate class="pequeno" />
     </prato>
     <prato>
-      <maçã />
+      <tomate />
     </prato>
-    <maçã />
+    <tomate />
     <prato>
       <laranja class="pequeno" />
     </prato>
@@ -573,8 +573,8 @@ var levels = [
       '<strong>[type]</strong> selects all elements that have a <strong>type="anything"</strong>. attribute'
     ],
     boardMarkup:`
-    <toalha><maçã class="pequeno"/></toalha>
-    <maçã for="Ethan"/>
+    <toalha><tomate class="pequeno"/></toalha>
+    <tomate for="Ethan"/>
     <prato for="Alice"><picles/></prato>
     <toalha for="Clara"><laranja/></toalha>
     <picles/>`
@@ -593,7 +593,7 @@ var levels = [
     ],
     boardMarkup:`
     <prato for="Sarah"><picles/></prato>
-    <prato for="Luke"><maçã/></prato>
+    <prato for="Luke"><tomate/></prato>
     <prato/>
     <toalha for="Steve"><laranja/></toalha>
     `
@@ -609,8 +609,8 @@ var levels = [
       '<strong>input[type="checkbox"]</strong> selects all checkbox input elements.'
     ],
     boardMarkup:`
-    <maçã for="Alexei" />
-    <toalha for="Albina"><maçã /></toalha>
+    <tomate for="Alexei" />
+    <toalha for="Albina"><tomate /></toalha>
     <toalha for="Vitaly"><laranja/></toalha>
     <picles/>
     `
@@ -627,7 +627,7 @@ var levels = [
     ],
     boardMarkup: `
     <prato for="Sam"><picles/></prato>
-    <toalha for="Sarah"><maçã class="pequeno"/></toalha>
+    <toalha for="Sarah"><tomate class="pequeno"/></toalha>
     <toalha for="Mary"><laranja/></toalha>
     `
   },
@@ -642,9 +642,9 @@ var levels = [
       '<strong>img[src$=".jpg"]</strong> selects all images display a <strong>.jpg</strong> image.',
     ],
     boardMarkup:`
-    <maçã class="pequeno"/>
+    <tomate class="pequeno"/>
     <toalha for="Hayato"><picles/></toalha>
-    <maçã for="Ryota"></maçã>
+    <tomate for="Ryota"></tomate>
     <prato for="Minato"><laranja/></prato>
     <picles class="pequeno"/>
     `
@@ -661,7 +661,7 @@ var levels = [
       '<strong>[class*="heading"]</strong> selects all elements with "heading" in their class, like <strong>class="main-heading"</strong> and <strong>class="sub-heading"</strong>'
     ],
     boardMarkup:`
-    <toalha for="Robbie"><maçã /></toalha>
+    <toalha for="Robbie"><tomate /></toalha>
     <toalha for="Timmy"><picles /></toalha>
     <toalha for="Bobby"><laranja /></toalha>
     `
