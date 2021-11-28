@@ -1,52 +1,52 @@
 var levels = [
   {
-    helpTitle : "Select elements by their type",
-    selectorName : "Type Selector",
-    doThis : "Select the plates",
-    selector : "plate",
+    helpTitle : "Escolhe elementos baseado em sua tag",
+    selectorName : "Seletor por tag",
+    doThis : "Selecione os pratos",
+    selector : "prato",
     syntax : "A",
-    help : "Selects all elements of type <strong>A</strong>. Type refers to the type of tag, so <tag>div</tag>, <tag>p</tag> and <tag>ul</tag> are all different element types.",
+    help : "",
     examples : [
-      '<strong>div</strong> selects all <tag>div</tag> elements.',
-      '<strong>p</strong> selects all <tag>p</tag> elements.',
+      '<strong>div</strong> seleciona todos elementos<tag>div</tag>.',
+      '<strong>p</strong> seleciona todos elementos <tag>p</tag>.',
     ],
     boardMarkup: `
-    <plate/>
-    <plate/>
+    <prato/>
+    <prato/>
     `
   },
   {
-    doThis : "Select the bento boxes",
-    selector : "bento",
+    doThis : "Selecione as toalhas",
+    selector : "toalha",
     syntax : "A",
-    helpTitle : "Select elements by their type",
-    selectorName : "Type Selector",
-    help : "Selects all elements of type <strong>A</strong>. Type refers to the type of tag, so <tag>div</tag>, <tag>p</tag> and <tag>ul</tag> are all different element types.",
+    helpTitle : "Escolhe elementos baseado em sua tag",
+    selectorName : "Seletor por tag",
+    help : "",
     examples : [
-      '<strong>div</strong> selects all <tag>div</tag> elements.',
-      '<strong>p</strong> selects all <tag>p</tag> elements.',
+      '<strong>div</strong> seleciona todos elementos <tag>div</tag>.',
+      '<strong>p</strong> seleciona todos elementos <tag>p</tag>.',
     ],
     boardMarkup: `
-    <bento/>
-    <plate/>
-    <bento/>
+    <toalha/>
+    <prato/>
+    <toalha/>
     `
   },
   {
-    doThis : "Select the fancy plate",
-    selector : "#fancy",
-    selectorName: "ID Selector",
-    helpTitle: "Select elements with an ID",
+    doThis : "Selecione o prato chique",
+    selector : "#chique",
+    selectorName: "Seletor por ID",
+    helpTitle: "Escolhe elementos baseados no valor de seu atributo id",
     syntax: "#id",
-    help : 'Selects the element with a specific <strong>id</strong>. You can also combine the ID selector with the type selector.',
+    help : "",
     examples : [
-      '<strong>#cool</strong> selects any element with <strong>id="cool"</strong>',
-      '<strong>ul#long</strong> selects <tag>ul id="long"</tag>'
+      '<strong>#cool</strong> seleciona o elemento com <strong>id="cool"</strong>',
+      '<strong>ul#long</strong> eleciona o elemento com <tag>ul id="long"</tag>'
     ],
     boardMarkup : `
-    <plate id="fancy"/>
-    <plate/>
-    <bento/>
+    <prato id="chique"/>
+    <prato/>
+    <toalha/>
     `
   },
   {
